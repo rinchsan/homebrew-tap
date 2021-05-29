@@ -5,24 +5,24 @@
 class Gosimports < Formula
   desc "Command gosimports updates your Go import lines, adding missing ones, removing unreferenced ones, and removing redundant blank lines."
   homepage "https://pkg.go.dev/github.com/rinchsan/gosimports/cmd/gosimports"
-  version "0.0.15"
+  version "0.0.16"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/rinchsan/gosimports/releases/download/v0.0.15/gosimports_0.0.15_darwin_amd64.tar.gz"
-    sha256 "7a2584df594a982477eb504de4d848b03f073b69c53cd3d02f0925af787ac587"
+    url "https://github.com/rinchsan/gosimports/releases/download/v0.0.16/gosimports_0.0.16_darwin_amd64.tar.gz"
+    sha256 "b7b987f6c38adef060349c049f8abbd6a4bf615afda24ec3cc8ffceb90e68c89"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/rinchsan/gosimports/releases/download/v0.0.15/gosimports_0.0.15_darwin_arm64.tar.gz"
-    sha256 "091fcbffd9a09052c43fbd132625ba4820b0009a46d2d51f75a3a2ad9f241e24"
+    url "https://github.com/rinchsan/gosimports/releases/download/v0.0.16/gosimports_0.0.16_darwin_arm64.tar.gz"
+    sha256 "ec14df9e3cfc3ed76e433e503ab0e3114706d818aa0155e011374d84f5ca7fbe"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/rinchsan/gosimports/releases/download/v0.0.15/gosimports_0.0.15_linux_amd64.tar.gz"
-    sha256 "74f48c754278957c698e709bb9fa8c393766c2ca5988b4f699209af58b50110f"
+    url "https://github.com/rinchsan/gosimports/releases/download/v0.0.16/gosimports_0.0.16_linux_amd64.tar.gz"
+    sha256 "0e15cee6cbf565a11f0b240637f92daa16c4e6eee65373e0a71a260a8dce59f3"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/rinchsan/gosimports/releases/download/v0.0.15/gosimports_0.0.15_linux_arm64.tar.gz"
-    sha256 "84199b2b40cbef5da76dd4125d1436518863bf60116272be9bd4d10963b6358e"
+    url "https://github.com/rinchsan/gosimports/releases/download/v0.0.16/gosimports_0.0.16_linux_arm64.tar.gz"
+    sha256 "2e2dbda97f3c0c2f324d49ab31462c2895985865a697957aa441589f60c856df"
   end
 
   def install
