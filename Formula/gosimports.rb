@@ -5,28 +5,28 @@
 class Gosimports < Formula
   desc "Command gosimports updates your Go import lines, adding missing ones, removing unreferenced ones, and removing redundant blank lines."
   homepage "https://pkg.go.dev/github.com/rinchsan/gosimports/cmd/gosimports"
-  version "0.0.20"
+  version "0.0.21"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.20/gosimports_0.0.20_darwin_amd64.tar.gz"
-      sha256 "5059a56871bed32f6b0c9be17cbead92f597a1217e394f2f17ac6abec1b95fe4"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.21/gosimports_0.0.21_darwin_amd64.tar.gz"
+      sha256 "49068f23be858d77cce8a113edfb716fbd224c47449dd10906ff11d9aaf3a10b"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.20/gosimports_0.0.20_darwin_arm64.tar.gz"
-      sha256 "dcc1d1110a99c12feee8ce0173fa51cfa0d4a66aeff479ea0292db2db81920b9"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.21/gosimports_0.0.21_darwin_arm64.tar.gz"
+      sha256 "9d928a2ad775b81a87c45c36c5f900108ba3f31fdbc13c6e8367a88a5c8be57d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.20/gosimports_0.0.20_linux_amd64.tar.gz"
-      sha256 "76a9b5e1ec34473e717a05d0e99140ba701941ae23a9bdc6da62f87641881321"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.21/gosimports_0.0.21_linux_amd64.tar.gz"
+      sha256 "4ff0f3a0a416ae13580d94a0afad531d627f2fcbed52b53d2d6bf62a618251c4"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.20/gosimports_0.0.20_linux_arm64.tar.gz"
-      sha256 "c17ad781f6a249801152e7bd1b7cfc0a8a55e453f3702b3e4abeeb3901ed2785"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.21/gosimports_0.0.21_linux_arm64.tar.gz"
+      sha256 "12237cbb30ac197e4a317225b8194fac472ae17cdcf87f391664e56cd7792664"
     end
   end
 
