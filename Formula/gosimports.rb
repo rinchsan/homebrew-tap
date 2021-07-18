@@ -5,28 +5,28 @@
 class Gosimports < Formula
   desc "Command gosimports updates your Go import lines, adding missing ones, removing unreferenced ones, and removing redundant blank lines."
   homepage "https://pkg.go.dev/github.com/rinchsan/gosimports/cmd/gosimports"
-  version "0.0.21"
+  version "0.0.22"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.21/gosimports_0.0.21_darwin_amd64.tar.gz"
-      sha256 "49068f23be858d77cce8a113edfb716fbd224c47449dd10906ff11d9aaf3a10b"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.22/gosimports_0.0.22_darwin_amd64.tar.gz"
+      sha256 "34ab2183e0d8b88cc84c32a74eb5bcac59da331c22c3e1f6ef8aa62dfaf24859"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.21/gosimports_0.0.21_darwin_arm64.tar.gz"
-      sha256 "9d928a2ad775b81a87c45c36c5f900108ba3f31fdbc13c6e8367a88a5c8be57d"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.22/gosimports_0.0.22_darwin_arm64.tar.gz"
+      sha256 "f41db5d1a8530d5c3b096c00ef6e939d3ec8d16375183e21c47713e37d0cdcd4"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.21/gosimports_0.0.21_linux_amd64.tar.gz"
-      sha256 "4ff0f3a0a416ae13580d94a0afad531d627f2fcbed52b53d2d6bf62a618251c4"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.22/gosimports_0.0.22_linux_amd64.tar.gz"
+      sha256 "1522c86affdb2d57b3ce36f579a476d8b5bd75998e4da1971e2308d0ce9a9e5b"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.21/gosimports_0.0.21_linux_arm64.tar.gz"
-      sha256 "12237cbb30ac197e4a317225b8194fac472ae17cdcf87f391664e56cd7792664"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.22/gosimports_0.0.22_linux_arm64.tar.gz"
+      sha256 "a65d995ce2754dd4c3fc77d8d17b227d1f01ab0e88463047e3622f6440121a60"
     end
   end
 
