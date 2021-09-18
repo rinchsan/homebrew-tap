@@ -5,28 +5,28 @@
 class Gosimports < Formula
   desc "Command gosimports updates your Go import lines, adding missing ones, removing unreferenced ones, and removing redundant blank lines."
   homepage "https://pkg.go.dev/github.com/rinchsan/gosimports/cmd/gosimports"
-  version "0.0.26"
+  version "0.0.27"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.26/gosimports_0.0.26_darwin_amd64.tar.gz"
-      sha256 "dad3139eba0f501e28fdd84dd44f6ab91c936ceca3988c19d8ab03f0f3fd43bf"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.27/gosimports_0.0.27_darwin_amd64.tar.gz"
+      sha256 "ce1ebd78d82a360adf90350538b19529f1328b2c9b560d078707e2a2f2fed35d"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.26/gosimports_0.0.26_darwin_arm64.tar.gz"
-      sha256 "2b1bb61c1ea6be82729a341cdf4a0598f47decddbd5c1f095490d48cdc82ec5e"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.27/gosimports_0.0.27_darwin_arm64.tar.gz"
+      sha256 "9c12e647eb4359710e737f76258e49977e961c0b73bcd83f0586f8942620233b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.26/gosimports_0.0.26_linux_amd64.tar.gz"
-      sha256 "7717af6bf96ebdca95a413b3ec35c150e511509bf32740300ca0ff28e7aa62f9"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.27/gosimports_0.0.27_linux_amd64.tar.gz"
+      sha256 "759628b99c1c9e9c0559b6f7d3d1613098b407e4f9f6b66d3b64cb7ea0bd3b81"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.26/gosimports_0.0.26_linux_arm64.tar.gz"
-      sha256 "b7c2b8798bd690837d9477fa079a85f55a00cc4701dbfe1cd603ccfad0ad9662"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.27/gosimports_0.0.27_linux_arm64.tar.gz"
+      sha256 "3573b42cbebc3f53b94ff4ad3f91c04d5ae0016923fcaef25fcd16de89cc3ff8"
     end
   end
 
