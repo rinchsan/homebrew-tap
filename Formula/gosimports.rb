@@ -5,28 +5,28 @@
 class Gosimports < Formula
   desc "Command gosimports updates your Go import lines, adding missing ones, removing unreferenced ones, and removing redundant blank lines."
   homepage "https://pkg.go.dev/github.com/rinchsan/gosimports/cmd/gosimports"
-  version "0.0.28"
+  version "0.1.0"
   bottle :unneeded
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.28/gosimports_0.0.28_darwin_amd64.tar.gz"
-      sha256 "d850cae621ff42456a4c421e87462eebab76e9530c7ee945851d4811198548fb"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.28/gosimports_0.0.28_darwin_arm64.tar.gz"
-      sha256 "f758aae78c2ac31c0d7e3ddfd3ea236ba08b810913b258de8f815442d396da16"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.1.0/gosimports_0.1.0_darwin_arm64.tar.gz"
+      sha256 "f944eae4c45d033565e9d766378ed452b659fd354764462c3fe188dbde4255d8"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.1.0/gosimports_0.1.0_darwin_amd64.tar.gz"
+      sha256 "2e6f4394776cd01845c98718c52bda512fce6ff5471b169745766023fe91e6da"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.28/gosimports_0.0.28_linux_amd64.tar.gz"
-      sha256 "fd10d0df1e12114c11dae916ee74073e4e2fec500475c9dab077afda96db9f5d"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.1.0/gosimports_0.1.0_linux_amd64.tar.gz"
+      sha256 "136a5bb2dd81ae06c06851950e6890299c4f81d06b061716d9a5af8b7cf12e84"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.0.28/gosimports_0.0.28_linux_arm64.tar.gz"
-      sha256 "1a8625906cfe1cf043a4820d384f33039c38254e325e9df547d325e950f1ccb8"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.1.0/gosimports_0.1.0_linux_arm64.tar.gz"
+      sha256 "efc649cec0e5b330c215ec1ba0b1185b730f3bbdac1f27ceb54bb4612e49348e"
     end
   end
 
