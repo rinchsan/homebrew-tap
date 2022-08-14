@@ -5,20 +5,20 @@
 class Gosimports < Formula
   desc "Command gosimports updates your Go import lines, adding missing ones, removing unreferenced ones, and removing redundant blank lines."
   homepage "https://pkg.go.dev/github.com/rinchsan/gosimports/cmd/gosimports"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.2.1/gosimports_0.2.1_darwin_amd64.tar.gz"
-      sha256 "226ed70b577ac77b1f0ac230ad66c179765d371e465fca12a0910682d7d0d03d"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.2.2/gosimports_0.2.2_darwin_amd64.tar.gz"
+      sha256 "4aacb748f3e83fd947e404afd0bb462882d25232093307e70baaae47910b8b82"
 
       def install
         bin.install "gosimports"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.2.1/gosimports_0.2.1_darwin_arm64.tar.gz"
-      sha256 "b543b01fa8f713eb814e22f710288f9ea7c06c3173cb36fd124f6ceeda658888"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.2.2/gosimports_0.2.2_darwin_arm64.tar.gz"
+      sha256 "dd784fde152b420cc99d4b3de1c77ca21eb01895fab684532b46f0e9570fa321"
 
       def install
         bin.install "gosimports"
@@ -28,16 +28,16 @@ class Gosimports < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.2.1/gosimports_0.2.1_linux_amd64.tar.gz"
-      sha256 "9404fe29a2b46ab0da4e52001c1f7825e342d1aa29a47b20814d3ed594b4ce73"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.2.2/gosimports_0.2.2_linux_amd64.tar.gz"
+      sha256 "f49325eaa5d8e1d0260e00f6ee188f67030be81c0bd4997811c4472eccf87ae4"
 
       def install
         bin.install "gosimports"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rinchsan/gosimports/releases/download/v0.2.1/gosimports_0.2.1_linux_arm64.tar.gz"
-      sha256 "3bc41f8390f1d50ddcb5169dde6581ab39fb35638a4f7c443cf54d32ce0574a0"
+      url "https://github.com/rinchsan/gosimports/releases/download/v0.2.2/gosimports_0.2.2_linux_arm64.tar.gz"
+      sha256 "fed863bb3972145a02253e89a641b8dd59f749883ff456a4ed9c40a0bfabdec8"
 
       def install
         bin.install "gosimports"
